@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Some Women</title>
+    <link href="styles.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div id="wrapper">
+        <nav>
+            <header>
+                <a href="index.html">
+                    <h1>Someone Else</h1>
+                    <p>Professional Translator</p>
+                    <p>(+359) xxx-xxx-xxx</p>
+                </a>
+            </header>
+            <ul>
+                <li><a href="index.html">about</a></li>
+                <li><a href="work.html">work</a></li>
+                <li><a href="services.html">services</a></li>
+                <li class="active"><a href="contact.html">contacts</a></li>
+            </ul>
+        </nav>
+
+        <section id="contact">
+            <div class="wrapper-content">
+
+                <address>
+                    St.Forest #99 <br>
+                    Veliko Tarnovo, 5000 <br />
+                    Bulgaria <br />
+                    <a href="mailto:hermail.someone@mmm.com">some.woman@mmmm.com</a><br />
+                    <a href="tel:+359xxxxxxxxxx">(+359)xxx-xxx-xxx</a>
+                </address>
+                <div class="social">
+                    <ul>
+                        <li><a href="https://www.facebook.com/" target="_blank">Facebok</a></li>
+                    </ul>
+                </div>
+                <div id="map_canvas"></div>
+                <div class="clearfix"></div>
+            </div>
+        </section>
+
+
+        <footer>
+            <p>Copyright &copy; 2017 <a href="http://staivanov.com">Created by Sta_Ivanov</a> </p>
+        </footer>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        function initialize() {
+            var mapCanvas = document.getElementById('map_canvas');
+            var mapOptions = {
+                center: new google.maps.LatLng(43.073222, 25.652134),
+                zoom: 16,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            var map = new google.maps.Map(mapCanvas, mapOptions)
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    <script>
+        $("ul li a").on('click', function (e) {
+            e.preventDefault();
+            $(this).closest('li').addClass('active').siblings().removeClass('active')
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Some Woman</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <nav>
+            <header>
+                <a href="index.html">
+                    <h1>Some Woman</h1>
+                    <p>Professional Translator</p>
+                    <p>(+359) xx xxx - xxx</p>
+                </a>
+            </header>
+            <ul>
+                <li class="active"><a href="index.html">about</a></li>
+                <li><a href="work.html">work</a></li>
+                <li><a href="services.html">services</a></li>
+                <li><a href="contact.html">contacts</a></li>
+            </ul>
+        </nav>
+
+        <section id="about">
+            <div class="wrapper-content">
+                <header>
+                    <img src="imgs/Untitled.png" class="clearfix" />
+                    <h1>For me</h1>
+                    <p>
+                        
+                        Hello to all of you! My name is SomeWoman and I live, study and work in Veliko Tarnovo. I have been here for almost 5 years now and this is also the place where I got my higher education – at the Veliko Tarnovo University. I graduated  my Bachelor’s degree in major English Philology and currently I am completing my Master’s degree as well, major – Translation studies. I chose to study these two majors because I have been interested in translation and literature since 8th grade. To me translation is a magic, you can express what you feel and think about the text you are translating at the moment by choosing specific words and expressions. The translator himself, in my opinion, is like an assistant of the author of the text or else – he is just the new author of the text which is now presented in a different language. That is why translation is my passion – I like to create new things and leave something from my soul and experience into them, this is what makes them special. Also I feel that being a translator is my vocation and that is why I will never leave behind this favourite activity of mine.
+                        As a person, I am very ambitious, very well-organized, hard-working and I always do my best – in all kinds of situations. My purpose in life is to constantly learn new things, to upgrade my knowledge in all spheres of language and literature and to make the best translations. I am a trustworthy person and also very responsible, I will do my best and always help people that need something to be translated.
+                    </p>
+                </header>
+                <div>
+                    <h2>Education</h2>
+                    <p>Foreign language school – Pleven.</p>
+                    <p>Bachelor’s degree in “English studies” at the Veliko Tarnovo University.</p>
+                    <p>Presently, I am completing my Master’s degree in “Translation studies – English language”  at the Veliko Tarnovo University.</p>
+
+                </div>
+                <img src="imgs/Untitled.png" class="clearfix right " />
+                <div class="skills">
+                    <div class="personal">
+                        <h2>Personal skills</h2>
+                        <ul>
+                            <li>Perfect communicative skills</li>
+                            <li>Good teamwork</li>
+                            <li>Good leadership skills</li>
+                            <li>Desire to constantly upgrade my knowledge in all spheres of  language ald literature</li>
+                            <li>Good ability to quickly solve conflicts</li>
+                            <li>Good diplomatic skills</li>
+                        </ul>
+                    </div>
+                    <div class="technical">
+                        <h2>Technical skills</h2>
+                        <ul>
+                            <li>Excellent work with translation software and CAT software like Trados and Wordfast.I also have a certificate for my excellent work with Trados</li>
+                            <li>Good work with Microsoft Office software</li>
+                            <li>Excellent computer skills</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Copyright &copy; 2017 <a href="http://staivanov.com">Created by Sta_Ivanov</a> </p>
+        </footer>
+    </div>
+    <script>
+        $("ul li a").on('click', function (e) {
+            e.preventDefault();
+            $(this).closest('li').addClass('active').siblings().removeClass('active')
+        });
+    </script>
+</body>
+</html>

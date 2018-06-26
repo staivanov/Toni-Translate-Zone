@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Some Woman</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <nav>
+            <header>
+                <a href="index.html">
+                    <h1>Some Woman</h1>
+                    <p>Professional Translator</p>
+                    <p>(+359) xx xxx - xxx</p>
+                </a>
+            </header>
+            <ul>
+                <li><a href="index.html">about</a></li>
+                <li><a href="work.html">work</a></li>
+                <li class="active"><a href="services.html">services</a></li>
+                <li><a href="contact.html">contacts</a></li>
+            </ul>
+        </nav>
+
+        <section id="services">
+            <div class="wrapper-content">
+                <img src="imgs/tr.jpg" class="left" />
+                <article>
+                    <h2>Services</h2>
+                    <p>Translation from Bulgarian into English and from English into Bulgarian. Proofreading and editing texts in English and in Bulgarian. I have three kinds of orders that depend on the time needed for their completion – Ordinary – it is done for three workdays, Quick – done for two workdays and Express – done within 8 or 24 hours. The prices are to be negotiated when contacting me via e-mail</p>
+                </article>
+                <div class="clearfix"></div>
+
+                <div class="clearfix"></div>
+                <article>
+                    <img src="imgs/ok.jpg" class="right" />
+                    <h2>Why to hire me</h2>
+                    <p>If you want to have a well-done project, well-written and well-prepared translation, well-edited text, I am the right person for you. I will do my best to meet your requirements and deadlines.</p>
+                </article>
+            </div>
+        </section>
+        <footer>
+              <p>Copyright &copy; 2017 <a href="http://staivanov.com">Created by Sta_Ivanov</a> </p>
+        </footer>
+    </div>
+
+    <script>
+    $("ul li a").on('click', function(e){
+        e.preventDefault();
+        $(this).closest('li').addClass('active').siblings().removeClass('active')
+    });
+    </script>   
+</body>
+</html>
+

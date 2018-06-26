@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Some Woman</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <nav>
+            <header>
+                <a href="index.html">
+                    <h1>Some Woman</h1>
+                    <p>Professional Translator</p>
+                    <p>(+359) xx xxx - xxx</p>
+                </a>
+            </header>
+            <ul>
+                <li><a href="index.html">about</a></li>
+                <li class="active"><a href="work.html">work</a></li>
+                <li><a href="services.html">services</a></li>
+                <li><a href="contact.html">contacts</a></li>
+            </ul>
+        </nav>
+
+        <section id="work">
+            <div class="wrapper-content">
+                <aside >
+                    <header>
+                        <h1>Important!</h1>
+                    </header>
+                    <p>In my job, I try to keep my professional projects confidential. If you wish to see some of my translation projects and clients that I have worked for, you can do that only after I have received a consent in written form from them.</p>
+                </aside>
+                <div>
+                    <a href="#"><img src="imgs/text.jpg" /></a>
+                    <header>
+                        <h2>Превод 1</h2>
+                    </header>
+                    <p>Стандартният отрязък от Lorem Ipsum, използван от 1500 г. насам, е поместен по-долу за тези, които се интересуват. Секции 1.10.32 и 1.10.33 от "de Finibus Bonorum et Malorum" на Цицерон също са поместени в оригиналния им формат, заедно с превода им на английски език, направен от H. Rackham през 1914г.</p>
+                </div>
+                <div>
+                    <a href="#"><img src="imgs/text.jpg" /></a>
+                    <header>
+                        <h2>Превод 2</h2>
+                    </header>
+                    <p>Стандартният отрязък от Lorem Ipsum, използван от 1500 г. насам, е поместен по-долу за тези, които се интересуват. Секции 1.10.32 и 1.10.33 от "de Finibus Bonorum et Malorum" на Цицерон също са поместени в оригиналния им формат, заедно с превода им на английски език, направен от H. Rackham през 1914г.</p>
+                </div>
+                <div>
+                    <a href="#"><img src="imgs/text.jpg" /></a>
+                    <header>
+                        <h2>Превод 3</h2>
+                    </header>
+                    <p>Стандартният отрязък от Lorem Ipsum, използван от 1500 г. насам, е поместен по-долу за тези, които се интересуват. Секции 1.10.32 и 1.10.33 от "de Finibus Bonorum et Malorum" на Цицерон също са поместени в оригиналния им формат, заедно с превода им на английски език, направен от H. Rackham през 1914г.</p>
+                </div>
+                <div>
+                    <a href="#"><img src="imgs/text.jpg" /></a>
+                    <header>
+                        <h2>Превод 4</h2>
+                    </header>
+                    <p>Стандартният отрязък от Lorem Ipsum, използван от 1500 г. насам, е поместен по-долу за тези, които се интересуват. Секции 1.10.32 и 1.10.33 от "de Finibus Bonorum et Malorum" на Цицерон също са поместени в оригиналния им формат, заедно с превода им на английски език, направен от H. Rackham през 1914г.</p>
+                </div>            
+            </div>
+
+            <div></div>
+
+        </section>
+        <footer>
+              <p>Copyright &copy; 2014 <a href="http://staivanov.com">Created by Sta_Ivanov</a> </p>
+        </footer>
+    </div>
+    <script>
+        $("ul li a").on('click', function(e){
+    e.preventDefault();
+    $(this).closest('li').addClass('active').siblings().removeClass('active')
+    });
+    </script>
+</body>
+</html>
